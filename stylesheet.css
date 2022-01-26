@@ -1,0 +1,382 @@
+html {
+    font-family: 'EB Garamond', serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid;
+    margin: auto;
+  }
+
+  h1:before {
+    margin-right: 10px
+  }
+
+  h1:after {
+    margin-left: 10px
+  }
+
+  h2 {
+    text-align: left;
+    position: relative;
+    font-style: italic;
+  }
+
+  h2:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: white;
+    width: 85%;
+    margin-left: 15px;
+    top: 50%;
+    }
+
+/******** navigation ******/
+
+nav {
+    margin-bottom: 5%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1;
+}
+
+nav ul li a {
+    font-style: italic;
+    font-size: 45px;
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+}  
+
+a:hover {
+    color: #fce496;
+}
+
+/******** flex boxes ******/
+
+article {
+    flex: 1;
+}
+
+.main-flex1 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section {
+    flex: 1;
+}
+
+p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 25px;
+}
+
+.subheaders {
+    font-style: italic;
+    font-size: 35px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/******** footer ******/
+
+footer section {
+    font-family: 'Crimson Pro', serif;
+    display: flex;
+    justify-content: center;
+}
+footer section p a{
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;  
+}
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    h2:after {
+        width: 60%;
+        margin-left: 10px;
+        }
+
+    /******** navigation ******/
+
+    nav a {
+        display: block;
+        font-style: italic;
+    }
+
+    nav ul {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /******** content ******/
+
+    article {
+        margin-top: 10px;
+    }
+
+    article section p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    img {
+        max-width: 330px;  
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    .main-flex1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subheaders {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    .line {
+        height: 2px;
+        width: 57%;
+        background-color: white;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    
+    .line1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .folder-headers {
+        padding-left: 20px;
+        justify-content: left;
+    }
+
+    .folder-paragraphs {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+        padding-top: 15px;
+    }
+
+    .bottom-paragraphs {
+        padding-top: 20px;
+    }
+
+    .design {
+        height: 2px;
+        width: 50%;
+        background-color: white;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .design-involvement-center {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /******** footer ******/
+
+    footer section {
+        justify-content: center;
+    }
+
+    footer section p {
+        padding: 10px;
+    }
+
+    footer section p a {
+    
+    font-size: 15px; 
+    padding: 0; 
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .top-h2 {
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h2.folder-headers:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: white;
+        width: 2000%;
+        margin-left: 15px;
+        top: 0%;
+    }
+
+    h2#design-involvement-folder-headers:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: white;
+        width: 1000%;
+        margin-left: 15px;
+        top: 0%;
+    }
+
+    h2#about-me:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: white;
+        width: 80%;
+        margin-left: 15px;
+        top: 50%;
+    }
+
+    #about-me {
+        margin-left: 30px;
+    }
+
+    /******** navigation ******/
+
+    nav ul li a {
+        display: block;
+    }
+
+    /******** flex boxes ******/ 
+
+    article {
+        flex: 1;
+    }
+    
+    article section p span {
+        display: block;
+    }
+
+    div {
+        display: flex;
+    }
+
+    .main {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .main-flex1 {
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .reverse {
+        padding-top: 15px;
+    }
+
+    .beta {
+        max-width: 500px;
+    }
+
+    .bigimg {
+        max-width: 500px;
+        max-height: 700px;
+    }
+
+    .design-involvement-image {
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+
+    .subheaders {
+        font-size: 30px;
+    }
+    
+    .line {
+        height: 2px;
+        width: 70%;
+        background-color: white;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    .line1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .paragraph-space {
+        padding-left: 30px;
+    }
+
+    .folder-paragraphs {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 5%;
+        font-size: 30px;
+    }
+
+    /******** footer ******/
+
+    footer section p {
+        padding: 10px;
+    }
+
+    footer section p a {
+        font-size: 25px; 
+        padding: 0; 
+
+    }
+}
